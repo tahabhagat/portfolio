@@ -47,5 +47,6 @@
   },
   "dependencies": {
     "dayjs": "1.11.10"
-  }
+  },
+  "packageManager": "yarn@4.9.1"
 }
