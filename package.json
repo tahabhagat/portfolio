@@ -17,6 +17,7 @@
 		"@sveltejs/adapter-auto": "2.1.0",
 		"@sveltejs/adapter-static": "2.0.3",
 		"@sveltejs/kit": "1.25.0",
+		"@sveltejs/vite-plugin-svelte": "^6.2.1",
 		"@types/dompurify": "^3.0.2",
 		"@types/marked": "^5.0.0",
 		"@types/prismjs": "^1.26.0",

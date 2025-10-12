@@ -6,7 +6,7 @@
 </script>
 
 <CommonPage {title}>
-	<div class="resume">
+	<div class="resume terminal-box">
 		{#if data}
 			<a href={data} download>
 				<Chip size={'1.25em'}>Download</Chip>

@@ -123,7 +123,7 @@
 		z-index: 10;
 		padding: 0px 10px;
 		height: 50px;
-		border-bottom: 1px solid var(--secondary);
+		border-bottom: 3px double var(--secondary);
 		background-color: var(--main);
 
 		&-item {

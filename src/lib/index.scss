@@ -49,8 +49,8 @@
 	--light-0-60: rgba(255, 255, 255, 0.6);
 
 	// fonts
-	--text-f: 'Inter';
-	--title-f: 'Inter';
+	--text-f: 'Space Mono', monospace;
+	--title-f: 'Space Mono', monospace;
 
 	overflow-y: scroll;
 }
@@ -285,14 +285,14 @@ body {
 		// font-size: 0.9em;
 		background-color: var(--tertiary);
 		padding: 1px 6px;
-		border-radius: 0.25em;
+		border-radius: 0;
 	}
 
 	& :not(pre) > code[class*='language-'],
 	pre[class*='language-'] {
 		background-color: var(--main-hover);
 		border: 1px solid var(--border);
-		border-radius: 0.25em;
+		border-radius: 0;
 		font-size: 0.9em;
 
 		&:hover {
@@ -311,7 +311,7 @@ body {
 		border: 1px solid var(--dividerLight);
 		margin-right: 0px;
 		margin-left: 0px;
-		border-radius: 0.25em;
+		border-radius: 0;
 
 		strong {
 			font-style: normal;
@@ -364,4 +364,38 @@ body {
 			transform: translateY(0) rotate(-45deg);
 		}
 	}
+}
+
+
+/* Terminal theme helpers */
+.terminal {
+	background-color: #000;
+	color: #d1ffd1; /* phosphor green */
+}
+
+.terminal a,
+.terminal-link {
+	color: #00ff7f;
+	text-decoration: none;
+}
+.terminal a:hover,
+.terminal-link:hover {
+	text-decoration: underline;
+}
+
+//.border-double {
+//	border: 3px double currentColor;
+//}
+
+.terminal-box {
+	//border: 2px solid #00ff7f;
+	border-radius: 0;
+	padding: 12px;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Optional: monospace everywhere via vars */
+:root, :root[data-theme='dark'], :root[data-theme='light'] {
+	--text-f: 'Space Mono', monospace;
+	--title-f: 'Space Mono', monospace;
 }

@@ -79,6 +79,9 @@
 
 <style lang="scss">
 	.card {
+		--border-radius:0;
+		-moz-border-radius: 0;
+		-webkit-border-radius: 0;
 		--border-color: transparent;
 		--bg-color: transparent;
 		--drop-color: transparent;

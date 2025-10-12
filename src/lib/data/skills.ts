@@ -35,6 +35,7 @@ const defineSkill = <S extends string>(
 };
 
 export const items = [
+
 	defineSkill({
 		slug: 'js',
 		color: 'yellow',
@@ -96,7 +97,15 @@ export const items = [
 		logo: Assets.Svelte,
 		name: 'Svelte',
 		category: 'library'
-	})
+	}),
+	defineSkill({
+		slug: 'spark',
+		color:'orange',
+		description:'Apache Spark',
+		logo: Assets.Spark,
+		name: 'Spark',
+		category: 'library'
+	}),
 ] as const;
 
 export const title = 'Skills';

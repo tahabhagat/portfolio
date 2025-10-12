@@ -11,7 +11,7 @@
 	onMount(() => onHydrated());
 </script>
 
-<div class={`body contents ${$theme ? 'theme-dark' : 'theme-light'}`}>
+<div class={`body contents terminal ${$theme ? 'theme-dark' : 'theme-light'}`}>
 	<NavMenu />
 	<div class="content container"><slot /></div>
 </div>
@@ -21,14 +21,14 @@
 		display: flex;
 		flex-direction: column;
 		flex: 1;
-		padding: 0px 0px;
+		padding: 0 0;
 	}
 
 	.body {
-		margin: 0px;
+		margin: 0;
 		background-color: var(--main);
 		color: var(--main-text);
-		font-family: var(--text-f);
+		font-family: var(--text-f),sans-serif;
 		display: flex;
 		flex-direction: column;
 		transition-duration: 200ms;
@@ -39,10 +39,10 @@
 	}
 
 	:global(p) {
-		margin: 0px;
+		margin: 0;
 	}
 
 	:global(h1, h2, h3, h4, h5, h6) {
-		margin: 5px 0px;
+		margin: 5px 0;
 	}
 </style>

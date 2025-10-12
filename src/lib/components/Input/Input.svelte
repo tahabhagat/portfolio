@@ -18,7 +18,8 @@
 />
 
 <style lang="scss">
-	input {
+  input {
+		border-radius: 0;
 		&:focus {
 			outline: 1px solid var(--border-hover);
 			background-color: var(--main-hover);
