@@ -4,6 +4,8 @@
 	import '$lib/index.scss';
 	import { onHydrated, theme } from '$lib/stores/theme';
 	import { onMount } from 'svelte';
+	import UnderConstructionBanner from '$lib/components/UnderConstructionBanner.svelte';
+	import { SHOW_UNDER_CONSTRUCTION, UNDER_CONSTRUCTION_TEXT } from '$lib/config';
 
 	// ? moved to +layout.server.ts : will be deleted when we make sure that everything is alright
 	// export const prerender = true;
@@ -13,6 +15,9 @@
 
 <div class={`body contents terminal ${$theme ? 'theme-dark' : 'theme-light'}`}>
 	<NavMenu />
+	{#if SHOW_UNDER_CONSTRUCTION}
+		<UnderConstructionBanner text={UNDER_CONSTRUCTION_TEXT} />
+	{/if}
 	<div class="content container"><slot /></div>
 </div>
 
