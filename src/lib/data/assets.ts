@@ -73,6 +73,8 @@ const Assets = {
 	Postcss: a('postcss.svg'),
 	Spark: a('spark.svg'),
 	SpringBoot: a('springboot.svg'),
+	ArangoDB:a('arangodb.png'),
+	OpenSearch:a('opensearch.svg'),
 };
 
 export default Assets;
