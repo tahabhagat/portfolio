@@ -14,10 +14,10 @@ const Assets = {
 	Cpp: a('cpp.svg'),
 	Celery: a('celery.svg'),
 	Django: a('django.svg'),
-	FastApi: a('fastapi'),
+	FastApi: a('fastapi.svg'),
 	Flask: a('flask.svg'),
 	Go: a('go.svg'),
-	Kafka: a('kafka.svg'),
+	Kafka: a('kafka.svg', 'kafka-white.svg'),
 	Neo4j: a('neo4j.svg'),
 	Nginx: a('nginx.svg'),
 	Numpy: a('numpy.svg'),
@@ -72,6 +72,7 @@ const Assets = {
 	Ruvy: a('ruvy.svg'),
 	Postcss: a('postcss.svg'),
 	Spark: a('spark.svg'),
+	SpringBoot: a('springboot.svg'),
 };
 
 export default Assets;

@@ -9,6 +9,10 @@
 	import type { Education } from '$lib/types';
 	import { computeExactDuration, getTimeDiff } from '$lib/utils';
 	import CardDivider from '$lib/components/Card/CardDivider.svelte';
+	import { theme } from '$lib/stores/theme';
+
+	// force reactivity on theme changes for asset URLs
+	$: void $theme;
 
 	let search = '';
 

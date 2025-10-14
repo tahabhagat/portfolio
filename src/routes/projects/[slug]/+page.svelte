@@ -14,8 +14,12 @@
 	import UIcon from '$lib/components/Icon/UIcon.svelte';
 	import CardDivider from '$lib/components/Card/CardDivider.svelte';
 	import Screenshot from '$lib/components/Screenshot/Screenshot.svelte';
+	import { theme } from '$lib/stores/theme';
 
 	export let data: { project?: Project };
+
+	// force reactivity on theme changes for asset URLs
+	$: void $theme;
 
 	const screenshots = data.project?.screenshots ?? [];
 

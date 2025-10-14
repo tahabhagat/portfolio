@@ -104,8 +104,56 @@ export const items = [
 		description:'Apache Spark',
 		logo: Assets.Spark,
 		name: 'Spark',
-		category: 'library'
+		category: 'framework'
 	}),
+	defineSkill({
+		slug: 'java',
+		color:'orange',
+		description:'Java',
+		logo: Assets.Java,
+		name: 'Java',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug:'kafka',
+		color:'blue',
+		description:'Apache Kafka',
+		logo:Assets.Kafka,
+		name: 'Kafka',
+		category: 'framework'
+	}),
+	defineSkill({
+		slug:'python',
+		color:'yellow',
+		description:"Python",
+		logo:Assets.Python,
+		name:'Python',
+		category:"pro-lang"
+	}),
+	defineSkill({
+		slug:'springboot',
+		color:'green',
+		description:"Spring Boot",
+		logo:Assets.SpringBoot,
+		name:'SpringBoot',
+		category:'framework'
+	}),
+	defineSkill({
+		slug:'fastapi',
+		color:'cyan',
+		description:'Fast API',
+		logo:Assets.FastApi,
+		name:'FastAPI',
+		category:'framework'
+	}),
+	defineSkill({
+		slug:'vuejs',
+		color:'green',
+		description:'Vue.JS',
+		logo:Assets.VueJs,
+		name:'Vue.js',
+		category:'framework',
+	})
 ] as const;
 
 export const title = 'Skills';
