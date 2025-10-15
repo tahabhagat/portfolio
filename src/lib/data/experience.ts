@@ -4,50 +4,20 @@ import { ContractType, type Experience } from '../types';
 
 export const items: Array<Experience> = [
 	{
-		slug: 'open-sourcer',
-		company: 'Self-employed',
-		description: 'Creating awesome tools for developers.',
-		contract: ContractType.SelfEmployed,
+		slug: 'lti',
+		company: 'LTIMindtree',
+		description: 'Developed and optimised data processing pipelines using Apache Spark and Kafka for AIOPS data for various clients, ensuring high performance and reliability. Worked with AI/ML frameworks and generative AI for intelligent data insights and automation. Built and maintained full stack applications using Spring Boot, FastAPI, and Vue.js to support data operations and user interactions. Managed containerized applications with Docker and Kubernetes for scalable deployments. Handled databases like ArangoDB, OpenSearch, and PostgreSQL for efficient data storage and retrieval. Collaborated in an Agile environment, participating in code reviews, sprint planning, and continuous integration/continuous deployment (CI/CD) processes to ensure high-quality software delivery.',
+		contract: ContractType.FullTime,
 		type: 'Software Development',
-		location: 'Home',
-		period: { from: new Date() },
-		skills: getSkills('ts', 'js'),
-		name: 'Open Source Developer',
-		color: 'red',
+		location: 'India',
+		period: { from: new Date(2023,6,27) },
+		skills: getSkills('spark','kafka','springboot', 'arangodb', 'postgresql', 'docker', 'k8s', 'fastapi', 'vuejs'),
+		name: 'Software Engineer',
+		color: 'yellow',
 		links: [],
 		logo: Assets.Unknown,
-		shortDescription: 'Creating awesome tools for developers.'
+		shortDescription: 'Full stack software and data engineer.'
 	},
-	{
-		slug: 'software-freelance',
-		company: 'Self-employed',
-		description: 'Creating awesome applications for customers.',
-		contract: ContractType.Freelance,
-		type: 'Software Development',
-		location: 'Home',
-		period: { from: new Date() },
-		skills: getSkills('svelte', 'ts', 'sass', 'css', 'html', 'js'),
-		name: 'Freelancer',
-		color: 'blue',
-		links: [],
-		logo: Assets.Unknown,
-		shortDescription: 'Creating awesome applications for customers.'
-	},
-	{
-		slug: 'software-freelance-junior',
-		company: 'Self-employed',
-		description: 'Creating awesome applications for customers.',
-		contract: ContractType.Freelance,
-		type: 'Software Development',
-		location: 'Home',
-		period: { from: new Date(2022, 0, 1), to: new Date() },
-		skills: getSkills('css', 'html', 'js'),
-		name: 'Junior Freelancer',
-		color: 'green',
-		links: [],
-		logo: Assets.Unknown,
-		shortDescription: 'Creating awesome applications for customers.'
-	}
 ];
 
 export const title = 'Experience';
