@@ -8,6 +8,10 @@
 	import { useTitle } from '$lib/utils/helpers';
 	import { isBlank } from '@riadh-adrani/utils';
 	import { getPlatfromIcon } from '$lib/utils';
+	import { theme } from '$lib/stores/theme';
+
+	// force reactivity on theme changes for asset URLs within children if needed
+	$: void $theme;
 
 	const isEmail = (email: string): boolean => {
 		const reg =
