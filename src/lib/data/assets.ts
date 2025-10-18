@@ -71,10 +71,14 @@ const Assets = {
 	Unocss: a('unocss.svg'),
 	Ruvy: a('ruvy.svg'),
 	Postcss: a('postcss.svg'),
-	Spark: a('spark.svg'),
+	Spark: a('spark-star.svg'),
 	SpringBoot: a('springboot.svg'),
 	ArangoDB:a('arangodb.png'),
 	OpenSearch:a('opensearch.svg'),
+	Batch: a('batch-sstreaming-data-icon.svg'),
+	DataEngg: a('data-engineer.svg'),
+	Audit: a('audit.svg'),
+	Lti: a('ltimindtree.svg')
 };
 
 export default Assets;

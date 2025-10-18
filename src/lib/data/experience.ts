@@ -15,7 +15,7 @@ export const items: Array<Experience> = [
 		name: 'Software Engineer',
 		color: 'yellow',
 		links: [],
-		logo: Assets.Unknown,
+		logo: Assets.Lti,
 		shortDescription: 'Full stack software and data engineer.'
 	},
 ];

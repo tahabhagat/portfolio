@@ -4,22 +4,6 @@ import type { Project } from '../types';
 
 export const items: Array<Project> = [
 	{
-		slug: 'pipeline-builder',
-		color: '#5e95e3',
-		description:
-			'Users could visually design data pipelines by dragging and dropping components onto a canvas, connecting them to define data flow, and configuring each component through intuitive forms. The backend, built with Spring Boot and Apache Spark, handled the execution of these pipelines, ensuring scalability and reliability. The frontend was build using VueFlow and Vue.js, providing a seamless and interactive user experience.',
-		shortDescription:
-			'A GUI Based data pipeline builder to create and manage data pipelines with ease.',
-		links: [],
-		logo: Assets.Unknown,
-		name: 'Data Pipeline Builder',
-		period: {
-			from: new Date()
-		},
-		skills: getSkills('spark', 'springboot', 'vuejs'),
-		type: 'Full Stack Application'
-	},
-	{
 		slug: 'streaming-pipelines',
 		color: '#ff3e00',
 		description:
@@ -30,9 +14,9 @@ export const items: Array<Project> = [
 		logo: Assets.Spark,
 		name: 'Streaming Pipelines',
 		period: {
-			from: new Date()
+			from: new Date(2023,9,27), to: new Date(2025, 9, 26)
 		},
-		skills: getSkills('spark', 'kafka'),
+		skills: getSkills('spark', 'kafka', 'arangodb', 'postgresql'),
 		type: 'Data Integration',
 	},
 	{
@@ -41,13 +25,29 @@ export const items: Array<Project> = [
 		description:'Developed performant batch processing pipelines using Apache Spark to efficiently process and transform large-scale CMDB datasets. These pipelines leveraged Apache Spark\'s distributed computing capabilities to handle processing and integration of large amounts of semi-structured CMDB data.',
 		shortDescription:'Batch processing pipelines for CMDB datasets',
 		links:[],
-		logo:Assets.Spark,
+		logo:Assets.Batch,
 		name:'CMDB Processing',
 		period:{
-			from:new Date()
+			from:new Date(2025, 3,27), to: new Date(2025, 9, 24)
 		},
-		skills:getSkills('spark', 'arangodb'),
+		skills:getSkills('spark','springboot','arangodb', 'java'),
 		type:'Data Integration'
+	},
+	{
+		slug: 'pipeline-builder',
+		color: '#5e95e3',
+		description:
+			'Users could visually design data pipelines by dragging and dropping components onto a canvas, connecting them to define data flow, and configuring each component through intuitive forms. The backend, built with Spring Boot and Apache Spark, handled the execution of these pipelines, ensuring scalability and reliability. The frontend was built using VueFlow and Vue.js, providing a seamless and interactive user experience.',
+		shortDescription:
+			'A GUI Based data pipeline builder to create and manage data pipelines with ease.',
+		links: [],
+		logo: Assets.DataEngg	,
+		name: 'Data Pipeline Builder',
+		period: {
+			from: new Date(2023,9,27), to: new Date(2024, 9, 21)
+		},
+		skills: getSkills('spark', 'springboot', 'vuejs', 'postgresql', 'java'),
+		type: 'Full Stack Application'
 	},
 	{
 		slug:'pipeline-audit',
@@ -55,12 +55,12 @@ export const items: Array<Project> = [
 		description:'Implemented a comprehensive auditing system for data pipelines, capturing detailed logs of data transformations, user actions, and system events. This system provided transparency and traceability, enabling users to monitor pipeline activities and ensure data integrity throughout the processing lifecycle.',
 		shortDescription:'Auditing system for data pipelines to ensure transparency and traceability',
 		links:[],
-		logo:Assets.Spark,
+		logo:Assets.Audit,
 		name:'Pipeline Audit',
 		period:{
-			from:new Date()
+			from:new Date(2024, 9, 27), to: new Date(2025, 3, 25)
 		},
-		skills:getSkills('spark', 'opensearch'),
+		skills:getSkills('spark','kafka', 'opensearch'),
 		type:'Data Governance'
 	},
 	{
@@ -72,7 +72,7 @@ export const items: Array<Project> = [
 		logo:Assets.Rust,
 		name:'High Score REST API',
 		period:{
-			from:new Date()
+			from:new Date(2025, 12, 1), to: new Date(2025, 12, 6)
 		},
 		skills:getSkills('rust', 'rocket', 'diesel','sqlite'),
 		type:'Backend Development'
@@ -82,10 +82,10 @@ export const items: Array<Project> = [
 		color:'#0277bd',
 		description:'Designed and implemented and AI powered system using Object detection to analyse real time density and dynamically optimise signal timings at intersections to reduce congestion and improve traffic flow. The system leveraged computer vision techniques to monitor traffic conditions and make real-time adjustments to signal timings based on traffic density and patterns.',
 		shortDescription:'AI powered traffic light control system to reduce congestion and improve traffic flow',
-		links:[],
+		links:[{'label':'Github', 'to':'https://github.com/tahabhagat/ITLCS'}],
 		logo:Assets.Python,
 		period:{
-			from:new Date()
+			from:new Date(2022, 5,0), to: new Date(2022, 10, 27)
 		},
 		skills:getSkills('python', 'opencv', 'yolo'),
 		name:'Intelligent Traffic Light Control System',
