@@ -6,7 +6,7 @@ export const items: Array<Education> = [
 		degree: 'Bachelors of Technology, Electronics and Computer Engineering',
 		description: 'Mixed Bachelors ',
 		location: 'India',
-		logo: Assets.Unknown,
+		logo: Assets.Mit,
 		name: 'Bachelors of Technology',
 		organization: 'MIT ADT',
 		period: { from: new Date(2019, 5, 1), to: new Date(2023, 5,0) },
