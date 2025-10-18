@@ -78,7 +78,8 @@ const Assets = {
 	Batch: a('batch-sstreaming-data-icon.svg'),
 	DataEngg: a('data-engineer.svg'),
 	Audit: a('audit.svg'),
-	Lti: a('ltimindtree.svg')
+	Lti: a('ltimindtree.svg'),
+	Mit:a('mitadt.png')
 };
 
 export default Assets;
