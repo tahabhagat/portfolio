@@ -16,6 +16,10 @@
 	import Chip from '$lib/components/Chip/Chip.svelte';
 	import Banner from '$lib/components/Banner/Banner.svelte';
 	import UIcon from '$lib/components/Icon/UIcon.svelte';
+	import { theme } from '$lib/stores/theme';
+
+	// force reactivity on theme changes for asset URLs
+	$: void $theme;
 
 	type Related = {
 		display: string;

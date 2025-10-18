@@ -11,8 +11,11 @@
 	import { getAssetURL } from '$lib/data/assets';
 	import { base } from '$app/paths';
 	import UIcon from '../Icon/UIcon.svelte';
+	import { theme } from '$lib/stores/theme';
 
 	export let project: Project;
+	// force reactivity on theme changes for asset URLs
+	$: void $theme;
 	$: months = countMonths(project.period.from, project.period.to);
 	// $: period = `${months} month${months > 1 ? 's' : ''}`;
 	// $: period = `${getTimeDiff(

@@ -14,8 +14,12 @@
 	import UIcon from '$lib/components/Icon/UIcon.svelte';
 	import CardDivider from '$lib/components/Card/CardDivider.svelte';
 	import Screenshot from '$lib/components/Screenshot/Screenshot.svelte';
+	import { theme } from '$lib/stores/theme';
 
 	export let data: { project?: Project };
+
+	// force reactivity on theme changes for asset URLs
+	$: void $theme;
 
 	const screenshots = data.project?.screenshots ?? [];
 
@@ -114,10 +118,10 @@
 						{/each}
 					</div>
 				{:else}
-					<div class="p-5 col-center gap-3 m-y-auto text-[var(--border)]">
-						<UIcon icon="i-carbon-image" classes="text-3.5em" />
-						<p class="font-300">No screenshots</p>
-					</div>
+<!--					<div class="p-5 col-center gap-3 m-y-auto text-[var(&#45;&#45;border)]">-->
+<!--						<UIcon icon="i-carbon-image" classes="text-3.5em" />-->
+<!--						<p class="font-300">No screenshots</p>-->
+<!--					</div>-->
 				{/if}
 			</div>
 		</div>

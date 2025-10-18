@@ -14,8 +14,12 @@
 	import Banner from '$lib/components/Banner/Banner.svelte';
 	import UIcon from '$lib/components/Icon/UIcon.svelte';
 	import CardDivider from '$lib/components/Card/CardDivider.svelte';
+	import { theme } from '$lib/stores/theme';
 
 	export let data: { experience?: Experience };
+
+	// force reactivity on theme changes for asset URLs
+	$: void $theme;
 
 	$: computedTitle = data.experience ? `${data.experience.name} - ${title}` : title;
 </script>

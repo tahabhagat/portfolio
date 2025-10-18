@@ -7,8 +7,7 @@ export const name = 'Taha';
 
 export const lastName = 'Bhagat';
 
-export const description =
-	'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, rerum. Debitis accusantium deleniti enim iste dignissimos? Similique, exercitationem! Odit vero, numquam quae ratione maxime sunt reiciendis laudantium quaerat iure ipsum!';
+export const description = 'Full stack developer and data engineer specializing in Java, Python, Machine Learning, and LLMs. Experienced in deploying scalable systems with Docker and Kubernetes, and building performant web applications using FastAPI, Spring Boot, and Vue.js. Skilled in designing streaming and batch pipelines with Apache Spark and Kafka, and managing data in ArangoDB, OpenSearch, and PostgreSQL. Background includes extensive work with ITIL datasets across ITSM, ESM, and CMDB domains.';
 
 export const links: Array<{ platform: Platform; link: string }> = [
 	{ platform: Platform.GitHub, link: 'https://github.com/tahabhagat' },
@@ -38,4 +37,4 @@ export const links: Array<{ platform: Platform; link: string }> = [
 	// }
 ];
 
-export const skills = getSkills('spark', 'css', 'html', 'reactjs', 'sass', 'svelte', 'ts');
+export const skills = getSkills('spark','java','kafka','python','springboot','fastapi','vuejs',);

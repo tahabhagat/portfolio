@@ -10,8 +10,12 @@
 	import UIcon from '../Icon/UIcon.svelte';
 	import Chip from '../Chip/Chip.svelte';
 	import CardDivider from '../Card/CardDivider.svelte';
+	import { theme } from '$lib/stores/theme';
 
 	export let experience: Experience;
+
+	// force reactivity on theme changes for asset URLs
+	$: void $theme;
 
 	// const months = getTimeDiff(experience.period.from, experience.period.to);
 	const exactDuration = computeExactDuration(experience.period.from, experience.period.to);

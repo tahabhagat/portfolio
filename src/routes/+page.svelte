@@ -8,6 +8,10 @@
 	import { useTitle } from '$lib/utils/helpers';
 	import { isBlank } from '@riadh-adrani/utils';
 	import { getPlatfromIcon } from '$lib/utils';
+	import { theme } from '$lib/stores/theme';
+
+	// force reactivity on theme changes for asset URLs within children if needed
+	$: void $theme;
 
 	const isEmail = (email: string): boolean => {
 		const reg =
@@ -23,8 +27,8 @@
 <div
 	class="col self-center flex-1 md:flex-row md:slef-stretch justify-center lg:justify-between items-center p-y-0px p-x-10px"
 >
-	<div class="md:flex-1 gap-10px terminal-box">
-		<MainTitle classes="md:text-left ">{name} {lastName},</MainTitle>
+	<div class="md:flex-1 gap-10px">
+		<MainTitle classes="md:text-left ">{name} {lastName}<span class="cursor">_</span></MainTitle>
 		<p class="text-[var(--tertiary-text)]  text-center md:text-left text-[1.2em] font-extralight">
 			{description}
 		</p>
@@ -41,7 +45,20 @@
 			{/each}
 		</div>
 	</div>
-	<div class="terminal-box m-t-3">
+	<div class=" m-t-3">
 		<Carrousel items={skills ?? skillsItems} />
 	</div>
 </div>
+
+<style>
+	/* Blinking cursor for the trailing underscore */
+	.cursor {
+		display: inline-block;
+		animation: cursor-blink 1s steps(1, end) infinite;
+	}
+
+	@keyframes cursor-blink {
+		0%, 49% { opacity: 1; }
+		50%, 100% { opacity: 0; }
+	}
+</style>

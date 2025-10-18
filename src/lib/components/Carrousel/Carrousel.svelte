@@ -3,6 +3,10 @@
 	import type { Skill } from '$lib/types';
 	import { getAssetURL } from '$lib/data/assets';
 	import UIcon from '../Icon/UIcon.svelte';
+	import { theme } from '$lib/stores/theme';
+
+	// force reactivity on theme changes for asset URLs
+	$: void $theme;
 
 	export let items: Array<Skill> = [];
 	const delay = 2000;
