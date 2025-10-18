@@ -1,11 +1,12 @@
 <script>
 	import { data, title } from '@data/resume';
+	import { base } from '$app/paths';
 
 	import Chip from '$lib/components/Chip/Chip.svelte';
 	import CommonPage from '$lib/components/CommonPage.svelte';
 
 	// Build a safe URL to the static PDF (served from /static at the root)
-	const pdfUrl = data ? `/${encodeURIComponent(data)}` : null;
+	const pdfUrl = data ? `${base}/${encodeURIComponent(data)}` : null;
 </script>
 
 <CommonPage {title}>
