@@ -79,3 +79,16 @@ export interface Education<S extends string = string> extends Item<S> {
 	subjects: Array<string>;
 	degree: string;
 }
+export interface Endorsement<S extends string = string> {
+	organization: Experience<S>;
+	person: string;
+	role: string;
+	relation: string;
+	endorsement: string;
+	link: Link;
+	period: {
+		from: Date;
+		to?: Date;
+	};
+	profileImage?: Asset;
+}

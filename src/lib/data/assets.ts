@@ -3,9 +3,13 @@ import { theme } from '$lib/stores/theme';
 import { base } from '$app/paths';
 
 const gh = (file: string) => `${base}/logos/${file}`;
+const pr = (file: string) => `${base}/profiles/${file}`;
 
 const a = (light: string, dark?: string): Asset =>
 	dark ? { dark: gh(dark), light: gh(light) } : gh(light);
+const b = (light: string, dark?: string): Asset =>
+	dark ? { dark: pr(dark), light: pr(light) } : pr(light);
+
 
 const Assets = {
 	AWS: a('aws.svg'),
@@ -79,7 +83,8 @@ const Assets = {
 	DataEngg: a('data-engineer.svg'),
 	Audit: a('audit.svg'),
 	Lti: a('ltimindtree.svg'),
-	Mit:a('mitadt.png')
+	Mit:a('mitadt.png'),
+	RathodH: b('hemant-rathod.jpg'),
 };
 
 export default Assets;
