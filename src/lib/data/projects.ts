@@ -14,7 +14,7 @@ export const items: Array<Project> = [
 		logo: Assets.Spark,
 		name: 'Streaming Pipelines',
 		period: {
-			from: new Date(2023,9,27), to: new Date(2025, 9, 26)
+			from: new Date(2023,8,27), to: new Date(2025, 8, 26)
 		},
 		skills: getSkills('spark', 'kafka', 'arangodb', 'postgresql'),
 		type: 'Data Integration',
@@ -28,7 +28,7 @@ export const items: Array<Project> = [
 		logo:Assets.Batch,
 		name:'CMDB Processing',
 		period:{
-			from:new Date(2025, 3,27), to: new Date(2025, 9, 24)
+			from:new Date(2025, 2,27), to: new Date(2025, 8, 24)
 		},
 		skills:getSkills('spark','springboot','arangodb', 'java'),
 		type:'Data Integration'
@@ -44,7 +44,7 @@ export const items: Array<Project> = [
 		logo: Assets.DataEngg	,
 		name: 'Data Pipeline Builder',
 		period: {
-			from: new Date(2023,9,27), to: new Date(2024, 9, 21)
+			from: new Date(2023,8,27), to: new Date(2024, 8, 21)
 		},
 		skills: getSkills('spark', 'springboot', 'vuejs', 'postgresql', 'java'),
 		type: 'Full Stack Application'
@@ -58,7 +58,7 @@ export const items: Array<Project> = [
 		logo:Assets.Audit,
 		name:'Pipeline Audit',
 		period:{
-			from:new Date(2024, 9, 27), to: new Date(2025, 3, 25)
+			from:new Date(2024, 8, 27), to: new Date(2025, 2, 25)
 		},
 		skills:getSkills('spark','kafka', 'opensearch'),
 		type:'Data Governance'
@@ -72,7 +72,7 @@ export const items: Array<Project> = [
 		logo:Assets.Rust,
 		name:'High Score REST API',
 		period:{
-			from:new Date(2025, 12, 1), to: new Date(2025, 12, 6)
+			from:new Date(2025, 11, 1), to: new Date(2025, 11, 6)
 		},
 		skills:getSkills('rust', 'rocket', 'diesel','sqlite'),
 		type:'Backend Development'
@@ -85,7 +85,7 @@ export const items: Array<Project> = [
 		links:[{'label':'Github', 'to':'https://github.com/tahabhagat/ITLCS'}],
 		logo:Assets.Python,
 		period:{
-			from:new Date(2022, 5,0), to: new Date(2022, 10, 27)
+			from:new Date(2022, 4,0), to: new Date(2022, 9, 27)
 		},
 		skills:getSkills('python', 'opencv', 'yolo'),
 		name:'Intelligent Traffic Light Control System',

@@ -10,7 +10,7 @@ export const items: Array<Experience> = [
 		contract: ContractType.FullTime,
 		type: 'Software Development',
 		location: 'India',
-		period: { from: new Date(2023,6,27), to: new Date(2026,1,9) },
+		period: { from: new Date(2023,5,27), to: new Date(2026,0,9) },
 		skills: getSkills('spark','kafka','springboot', 'arangodb', 'postgresql', 'docker', 'k8s', 'fastapi', 'vuejs'),
 		name: 'Software Engineer',
 		color: 'yellow',
