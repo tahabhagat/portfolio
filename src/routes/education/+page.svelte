@@ -10,6 +10,7 @@
 	import { computeExactDuration, getTimeDiff } from '$lib/utils';
 	import CardDivider from '$lib/components/Card/CardDivider.svelte';
 	import { theme } from '$lib/stores/theme';
+	import CardTitle from '$lib/components/Card/CardTitle.svelte';
 
 	// force reactivity on theme changes for asset URLs
 	$: void $theme;
@@ -64,14 +65,16 @@
 					<div class="col flex-1 items-stretch">
 						<Card>
 							<div class="flex-1 col gap-2 items-stretch">
-								<img
-									src={getAssetURL(education.logo)}
-									alt={education.organization}
-									height="50"
-									width="50"
-									class="mb-5"
-								/>
-								<div class="text-[1.3em]">{education.degree}</div>
+								<div class="row items-center gap-2">
+									<img
+										src={getAssetURL(education.logo)}
+										alt={education.organization}
+										height="50"
+										width="50"
+									/>
+									<CardTitle title={`${education.name}`}/>
+								</div>
+								<div class="text-[1.15em]">{education.degree}</div>
 								<div>{education.organization}</div>
 								<div class="col text-[0.9em]">
 									<CardDivider />
@@ -81,7 +84,7 @@
 									</div>
 									<CardDivider />
 									<div class="row items-center gap-2">
-										<UIcon icon="i-carbon-time" />
+										<UIcon icon="i-carbon-calendar" />
 										{formatDate(education.period.from) + " to " + formatDate(education.period.to)}
 									</div>
 									<CardDivider />
