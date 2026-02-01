@@ -18,6 +18,12 @@
 
 	let result: Array<Education> = items;
 
+	const dateTimeFormat = Intl.DateTimeFormat(undefined, {year:"numeric", month:"long"});
+
+	const formatDate = (date: Date | undefined) => {
+		return dateTimeFormat.format(date);
+	}
+
 	const onSearch = (ev: CustomEvent<{ search: string }>) => {
 		const s = ev.detail.search;
 
@@ -76,7 +82,7 @@
 									<CardDivider />
 									<div class="row items-center gap-2">
 										<UIcon icon="i-carbon-time" />
-										{computeExactDuration(education.period.from, education.period.to)}
+										{formatDate(education.period.from) + " to " + formatDate(education.period.to)}
 									</div>
 									<CardDivider />
 								</div>
