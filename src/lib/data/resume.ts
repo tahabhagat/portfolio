@@ -1,3 +1,3 @@
-export const data = 'Taha Bhagat CV 22050122.pdf';
+export const data = 'Taha Bhagat CV.pdf';
 
 export const title = 'Resumé';
