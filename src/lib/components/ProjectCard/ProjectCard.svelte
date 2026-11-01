@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { computeExactDuration, countMonths, getMonthName } from '$lib/utils/helpers';
+	import { computeExactDuration, getMonthName } from '$lib/utils/helpers';
 	import Chip from '../Chip/Chip.svelte';
 	import Card from '../Card/Card.svelte';
 	import CardTitle from '../Card/CardTitle.svelte';
@@ -16,15 +16,11 @@
 	export let project: Project;
 	// force reactivity on theme changes for asset URLs
 	$: void $theme;
-	$: months = countMonths(project.period.from, project.period.to);
-	// $: period = `${months} month${months > 1 ? 's' : ''}`;
-	// $: period = `${getTimeDiff(
-	// 	project.period.from,
-	// 	project.period.to ?? new Date(Date.now() + 1000 * 60 * 60 * 24)
-	// )}`;
-	$: period = computeExactDuration(project.period.from, project.period.to);
-	$: from = `${getMonthName(project.period.from.getMonth())} ${project.period.from.getFullYear()}`;
-	$: to = project.period.to
+	$: period = project.period ? computeExactDuration(project.period.from, project.period.to) : '';
+	$: from = project.period
+		? `${getMonthName(project.period.from.getMonth())} ${project.period.from.getFullYear()}`
+		: '';
+	$: to = project.period?.to
 		? `${getMonthName(project.period.to.getMonth())} ${project.period.to.getFullYear()}`
 		: 'now';
 </script>
@@ -45,25 +41,29 @@
 			<UIcon icon="i-carbon-assembly-cluster" classes="text-1.25em" />
 			<p>{project.type}</p>
 		</div>
-		<CardDivider />
-		<div class="row items-center gap-2">
-			<UIcon icon="i-carbon-time" classes="text-1.25em" />
-			<p>{period}</p>
-		</div>
-		<CardDivider />
+		{#if project.period}
+			<CardDivider />
+			<div class="row items-center gap-2">
+				<UIcon icon="i-carbon-time" classes="text-1.25em" />
+				<p>{period}</p>
+			</div>
+			<CardDivider />
+		{/if}
 	</div>
 	<div class="col sm:h-100px md:h-160px">
 		<p class="text-[0.9em] text-[var(--secondary-text)] m-t-20px m-b-40px flex-1 line-clamp-3">
 			{project.shortDescription}
 		</p>
 	</div>
-	<div class="row justify-between text-0.8em font-400">
-		<Chip>{from}</Chip>
-		{#if from !== to}
-			<Chip>{to}</Chip>
-		{/if}
-	</div>
-	<CardDivider />
+	{#if project.period}
+		<div class="row justify-between text-0.8em font-400">
+			<Chip>{from}</Chip>
+			{#if from !== to}
+				<Chip>{to}</Chip>
+			{/if}
+		</div>
+		<CardDivider />
+	{/if}
 	<div class="row flex-wrap">
 		{#each project.skills as tech}
 			<ChipIcon

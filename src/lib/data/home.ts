@@ -7,13 +7,14 @@ export const name = 'Taha';
 
 export const lastName = 'Bhagat';
 
-export const description = 'Full stack developer and data engineer specializing in Java, Python, Machine Learning, and LLMs. Experienced in deploying scalable systems with Docker and Kubernetes, and building performant web applications using FastAPI, Spring Boot, and Vue.js. Skilled in designing streaming and batch pipelines with Apache Spark and Kafka, and managing data in ArangoDB, OpenSearch, and PostgreSQL. Background includes extensive work with ITIL datasets across ITSM, ESM, and CMDB domains.';
+export const description =
+	'Full-stack software engineer and data engineer with experience building clinical study automation, AI-enabled data ingestion, and high-throughput AIOps pipelines. Skilled in Python, Java, FastAPI, Spring Boot, Apache Spark, Kafka, MongoDB, and Kubernetes.';
 
 export const links: Array<{ platform: Platform; link: string }> = [
 	{ platform: Platform.GitHub, link: 'https://github.com/tahabhagat' },
 	{
 		platform: Platform.Linkedin,
-		link: 'https://www.linkedin.com/in/taha-bhagat-652540247/'
+		link: 'https://linkedin.com/in/taha-bhagat/'
 	},
 	// {
 	// 	platform: Platform.Twitter,
@@ -37,4 +38,4 @@ export const links: Array<{ platform: Platform; link: string }> = [
 	// }
 ];
 
-export const skills = getSkills('spark','java','kafka','python','springboot','fastapi','vuejs',);
+export const skills = getSkills('python', 'java', 'spark', 'kafka', 'fastapi', 'mongodb', 'k8s');

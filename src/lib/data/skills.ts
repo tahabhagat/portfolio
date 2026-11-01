@@ -9,7 +9,7 @@ const categories = [
 	defineSkillCategory({ name: 'Programming Languages', slug: 'pro-lang' }),
 	defineSkillCategory({ name: 'Frameworks', slug: 'framework' }),
 	defineSkillCategory({ name: 'Libraries', slug: 'library' }),
-	defineSkillCategory({ name: 'Langauges', slug: 'lang' }),
+	defineSkillCategory({ name: 'Languages', slug: 'lang' }),
 	defineSkillCategory({ name: 'Databases', slug: 'db' }),
 	defineSkillCategory({ name: 'ORMs', slug: 'orm' }),
 	defineSkillCategory({ name: 'DevOps', slug: 'devops' }),
@@ -148,6 +148,166 @@ export const items = [
 		logo:Assets.OpenSearch,
 		name:'OpenSearch',
 		category:'db'
+	}),
+	defineSkill({
+		slug: 'angularjs',
+		color: 'red',
+		description: 'Developed and maintained full-stack features for Lifio Clinical Study Automation using AngularJS.',
+		logo: Assets.Angular,
+		name: 'AngularJS',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'mongodb',
+		color: 'green',
+		description: 'Used MongoDB for clinical study automation and ingestion applications.',
+		logo: Assets.MongoDB,
+		name: 'MongoDB',
+		category: 'db'
+	}),
+	defineSkill({
+		slug: 'mysql',
+		color: 'blue',
+		description: 'Experience working with relational databases including MySQL.',
+		logo: Assets.Unknown,
+		name: 'MySQL',
+		category: 'db'
+	}),
+	defineSkill({
+		slug: 'sqlite',
+		color: 'blue',
+		description: 'Used SQLite with Rust applications built using Rocket and Diesel.',
+		logo: Assets.Unknown,
+		name: 'SQLite',
+		category: 'db'
+	}),
+	defineSkill({
+		slug: 'elasticsearch',
+		color: 'blue',
+		description: 'Experience with search and analytics databases, including Elasticsearch.',
+		logo: Assets.Unknown,
+		name: 'Elasticsearch',
+		category: 'db'
+	}),
+	defineSkill({
+		slug: 'chromadb',
+		color: 'purple',
+		description: 'Experience using ChromaDB for vector data.',
+		logo: Assets.Unknown,
+		name: 'ChromaDB',
+		category: 'db'
+	}),
+	defineSkill({
+		slug: 'langchain',
+		color: 'green',
+		description: 'Used LangChain for AI-enabled application workflows.',
+		logo: Assets.Unknown,
+		name: 'LangChain',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'nextjs',
+		color: 'black',
+		description: 'Built the RAADS-R self-assessment application with Next.js.',
+		logo: Assets.Unknown,
+		name: 'Next.js',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'bun',
+		color: 'orange',
+		description: 'Used Bun in the RAADS-R self-assessment application.',
+		logo: Assets.Unknown,
+		name: 'Bun',
+		category: 'devtools'
+	}),
+	defineSkill({
+		slug: 'tauri',
+		color: 'blue',
+		description: 'Used Tauri to build the RAADS-R application as a desktop app.',
+		logo: Assets.Unknown,
+		name: 'Tauri',
+		category: 'framework'
+	}),
+	defineSkill({
+		slug: 'rocket',
+		color: 'red',
+		description: 'Built RESTful applications using the Rocket web framework for Rust.',
+		logo: Assets.Unknown,
+		name: 'Rocket.rs',
+		category: 'framework'
+	}),
+	defineSkill({
+		slug: 'diesel',
+		color: 'orange',
+		description: 'Used Diesel as the ORM for Rust applications.',
+		logo: Assets.Unknown,
+		name: 'Diesel.rs',
+		category: 'orm'
+	}),
+	defineSkill({
+		slug: 'websockets',
+		color: 'blue',
+		description: 'Built real-time application features using WebSockets.',
+		logo: Assets.Unknown,
+		name: 'WebSockets',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'sse',
+		color: 'blue',
+		description: 'Implemented Server-Sent Events (SSE) for streaming application data.',
+		logo: Assets.Unknown,
+		name: 'SSE',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'git',
+		color: 'orange',
+		description: 'Used Git for version control and collaborative software development.',
+		logo: Assets.Unknown,
+		name: 'Git',
+		category: 'devtools'
+	}),
+	defineSkill({
+		slug: 'cicd',
+		color: 'blue',
+		description: 'Worked with CI/CD practices for software delivery.',
+		logo: Assets.Unknown,
+		name: 'CI/CD',
+		category: 'devops'
+	}),
+	defineSkill({
+		slug: 'html',
+		color: 'orange',
+		description: 'Built web interfaces using HTML and CSS.',
+		logo: Assets.HTML,
+		name: 'HTML',
+		category: 'markup-style'
+	}),
+	defineSkill({
+		slug: 'css',
+		color: 'blue',
+		description: 'Styled responsive web interfaces using CSS.',
+		logo: Assets.CSS,
+		name: 'CSS',
+		category: 'markup-style'
+	}),
+	defineSkill({
+		slug: 'opencv',
+		color: 'blue',
+		description: 'Applied computer vision techniques in an intelligent traffic signal project.',
+		logo: Assets.Unknown,
+		name: 'OpenCV',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'yolo',
+		color: 'purple',
+		description: 'Used object detection for an intelligent traffic signal project.',
+		logo: Assets.Unknown,
+		name: 'YOLO',
+		category: 'library'
 	}),
 ] as const;
 

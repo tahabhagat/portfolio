@@ -7,9 +7,8 @@ export const items: Array<Project> = [
 		slug: 'streaming-pipelines',
 		color: '#ff3e00',
 		description:
-			'Developed robust streaming data pipelines using Apache Kafka and Apache Spark to facilitate real-time data integration and processing. These pipelines were designed to handle high-throughput data streams, ensuring low-latency processing and delivery. Leveraged Kafka\'s distributed messaging system for reliable data ingestion and Spark\'s powerful processing capabilities for real-time analytics and transformations. Implemented fault-tolerance and scalability features to maintain pipeline performance under varying loads, ensuring seamless data flow across systems. Optimised existing pipelines, refactoring join conditions and replacing UDFs to improve performance and reduce latency.',
-		shortDescription:
-			'Streaming pipelines using Apache Kafka and Apache Spark for real-time data integration',
+			'Engineered high-performance pipelines for real-time IT operations data integration, processing more than 1,000 events per second into SQL and NoSQL databases. Used Kafka and Spark to deliver reliable, scalable data processing.',
+		shortDescription: 'Real-time IT operations data pipelines processing 1,000+ events per second.',
 		links: [],
 		logo: Assets.Spark,
 		name: 'Streaming Pipelines',
@@ -22,8 +21,8 @@ export const items: Array<Project> = [
 	{
 		slug:'cmdb-processing',
 		color:'#f2b632',
-		description:'Developed performant batch processing pipelines using Apache Spark to efficiently process and transform large-scale CMDB datasets. These pipelines leveraged Apache Spark\'s distributed computing capabilities to handle processing and integration of large amounts of semi-structured CMDB data.',
-		shortDescription:'Batch processing pipelines for CMDB datasets',
+		description:'Developed Apache Spark batch pipelines to integrate service catalog data, configuration items, and their relationships for deeper analysis, reducing manual effort by 80%.',
+		shortDescription:'Batch integration of service catalog data and configuration items.',
 		links:[],
 		logo:Assets.Batch,
 		name:'CMDB Processing',
@@ -52,8 +51,8 @@ export const items: Array<Project> = [
 	{
 		slug:'pipeline-audit',
 		color:'#34a853',
-		description:'Implemented a comprehensive auditing system for data pipelines, capturing detailed logs of data transformations, user actions, and system events. This system provided transparency and traceability, enabling users to monitor pipeline activities and ensure data integrity throughout the processing lifecycle.',
-		shortDescription:'Auditing system for data pipelines to ensure transparency and traceability',
+		description:'Architected a Spark-based audit system that captured pipeline transformations and events, improving observability and reducing downtime by over 60%.',
+		shortDescription:'Spark-based pipeline observability and audit system.',
 		links:[],
 		logo:Assets.Audit,
 		name:'Pipeline Audit',
@@ -66,22 +65,43 @@ export const items: Array<Project> = [
 	{
 		slug:'high-score-rest-api',
 		color: '#4caf50',
-		description:'Designed and developed a RESTful API to manage scores for an online game using Rust Rocket and Diesel ORM. Leveraged Rust\'s performance and safety features to build a high-performance backend capable of handling concurrent requests with low latency.',
-		shortDescription:'RESTful API for managing game scores',
+		description:'Built and maintained an open-source RESTful application with Rocket and Diesel to track and manage leaderboards for online games.',
+		shortDescription:'Open-source RESTful leaderboard application for online games.',
 		links:[{'label':'GitHub','to':'https://github.com/tahabhagat/high-score-application',newTab:true}],
 		logo:Assets.Rust,
-		name:'High Score REST API',
-		period:{
-			from:new Date(2025, 11, 1), to: new Date(2025, 11, 6)
-		},
+		name:'High Score Application',
 		skills:getSkills('rust', 'rocket', 'diesel','sqlite'),
 		type:'Backend Development'
 	},
 	{
+		slug: 'raads-r-self-assessment',
+		color: '#5e95e3',
+		description:
+			'Built and maintained an application for self-assessment using the Ritvo Autism Asperger Diagnostic Scale-Revised (RAADS-R).',
+		shortDescription: 'A self-assessment application for the RAADS-R questionnaire.',
+		links: [{ label: 'GitHub', to: 'https://github.com/tahabhagat/raads-r', newTab: true }],
+		logo: Assets.Unknown,
+		name: 'RAADS-R Self Assessment Application',
+		skills: getSkills('nextjs', 'bun', 'tauri'),
+		type: 'Application Development'
+	},
+	{
+		slug: 'snake-game',
+		color: '#34a853',
+		description:
+			'Migrated the application from Flask, SQLAlchemy, and pip to FastAPI, SQLModel, and uv, improving developer experience and lowering request latency.',
+		shortDescription: 'Migrated a Flask application to FastAPI and SQLModel.',
+		links: [{ label: 'GitHub', to: 'https://github.com/LOCKhart07/snake-game', newTab: true }],
+		logo: Assets.FastApi,
+		name: 'Snake Game',
+		skills: getSkills('python', 'fastapi'),
+		type: 'Backend Development'
+	},
+	{
 		slug:'itlcs',
 		color:'#0277bd',
-		description:'Designed and implemented and AI powered system using Object detection to analyse real time density and dynamically optimise signal timings at intersections to reduce congestion and improve traffic flow. The system leveraged computer vision techniques to monitor traffic conditions and make real-time adjustments to signal timings based on traffic density and patterns.',
-		shortDescription:'AI powered traffic light control system to reduce congestion and improve traffic flow',
+		description:'Built an AI object-detection-based adaptive signal timing system to analyse real-time traffic density and optimise traffic signal timings.',
+		shortDescription:'AI-powered traffic signal timing based on real-time vehicle detection.',
 		links:[{'label':'Github', 'to':'https://github.com/tahabhagat/ITLCS'}],
 		logo:Assets.Python,
 		period:{

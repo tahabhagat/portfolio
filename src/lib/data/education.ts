@@ -3,16 +3,24 @@ import type { Education } from '../types';
 
 export const items: Array<Education> = [
 	{
-		degree: 'Bachelors of Technology, Electronics and Computer Engineering',
-		description: 'Mixed Bachelors ',
-		location: 'India',
+		degree: 'Bachelor of Technology, Electronics and Computer Engineering',
+		description:
+			'Capstone project: Intelligent Traffic Light Control System, an AI object-detection-based adaptive signal timing system.',
+		location: 'Pune, IN',
 		logo: Assets.Mit,
-		name: 'Bachelors of Technology',
-		organization: 'MIT ADT',
-		period: { from: new Date(2019, 5, 1), to: new Date(2023, 5,0) },
+		name: 'Bachelor of Technology',
+		organization: 'Maharashtra Institute of Technology',
+		period: { from: new Date(2019, 4, 1), to: new Date(2023, 4, 31) },
 		shortDescription: '',
 		slug: 'b-tech',
-		subjects: ['C', 'Java', 'Python', 'Embedded Systems', 'Machine Learning', 'Data Science']
+		subjects: [
+			'Data Structures & Algorithms',
+			'Data Science and Analytics',
+			'DBMS',
+			'Machine Learning',
+			'Computer Networks',
+			'Embedded Systems'
+		]
 	},
 	// {
 	// 	degree: 'PhD of Computer Science',
